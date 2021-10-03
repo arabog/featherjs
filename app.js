@@ -119,3 +119,12 @@ app.service("messages").create({
 })
 
 // go to: http://localhost:3030/messages
+
+/* The app.use calls probably look familiar if you have used 
+Express before. The app.configure calls set up the Feathers 
+transport to host the API. app.on('connection') and app.publish 
+are used to set up event channels which send real-time events 
+to the proper clients (everybody that is connected to our server 
+in this case). You can learn more about channels after finishing 
+this guide in the channels API. */
+
