@@ -62,7 +62,7 @@ app.use(express.errorHandler())
 
 // add any new real-time connection to d "everybody" channel
 app.on("connection", connection => 
-          app.channel("everybody").json(connection)
+          app.channel("everybody").join(connection)
 )
 
 // publish all evens to d everybody channel
